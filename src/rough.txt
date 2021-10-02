@@ -1,0 +1,18 @@
+if (direction === "west") {
+        let newx = state.X;
+        console.log("newx", newx, direction);
+        if (newx + 1 > 4 || newx + 1 < 0) {
+          console.log("IAM CALLED");
+          return { ...state, err: "moving west will drop you off the table" };
+        } else {
+          return state;
+        }
+      }
+
+
+
+
+
+
+
+      
